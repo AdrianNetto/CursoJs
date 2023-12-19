@@ -1,0 +1,51 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    color: aliceblue;
+}
+
+.container {
+    margin-top: 13%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 1rem;
+}
+
+#input {
+    margin-bottom: 1rem;
+    width: 25%;
+    height: 10rem;
+    resize: none;
+    background-color: #464646;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.counter {
+    margin-bottom: 1rem;
+}
+
+#toggle {
+    background-color: #464646;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    border: none;
+    border-radius: 5px;
+    width: 10rem;
+    height: 3rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#toggle:active {
+    transition: .4s;
+    transform: scale(.90);
+}

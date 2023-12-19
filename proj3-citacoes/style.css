@@ -1,0 +1,51 @@
+body {
+    background-color: #F0F8FF;
+    padding-top: 2rem;
+}
+
+.quote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 2px solid #483D8B;
+    color: #483D8B;
+    border-radius: .4rem;
+    margin-top: 15%;
+}
+
+.quote .text{
+    font-style: italic;
+    margin-bottom: .4rem;
+}
+
+.quote .author{
+    font-weight: bold;
+    color: #30295d; 
+}
+
+.button{
+    background-color: #4caf50;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .8rem 1.2rem;
+    opacity: .9;
+    transition: .4s;
+    margin-top: 1.2rem;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #45a049; 
+    opacity: 1; 
+}
+
+.button:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}

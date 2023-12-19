@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS IT</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <h1>CAN YOU GUESS THE NUMBER?</h1>
+    <div class="container">
+        <div id="diffSet">
+            <label for="dificuldade">SELECT THE DIFFICULTY</label>
+            <select name="dificuldade" id="selectorDiff">
+                <option value="" readonly>SELECT</option>
+                <option value="1">EASY</option>
+                <option value="2">MEDIUM</option>
+                <option value="3">HARD</option>
+            </select>
+        </div>
+
+        <div id="game-section">
+            <p id="title">The number I'm thinking of is between 1 and 100. What number is that?</p>
+
+            <div class="guess-section">
+                <input type="number" min="0" id="guess" onkeypress="inpNum(event)" placeholder="type your answer here">
+                <button id="guess-button">GUESS</button>
+            </div>
+
+            <p id="result"></p>
+
+            <button id="reset-btn">PLAY AGAIN</button>
+
+            <p>TRIES LEFT: <span id="tries-left"></span></p>
+        </div>
+    </div>
+</body>
+</html>

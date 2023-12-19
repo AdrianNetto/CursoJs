@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#converterForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+textarea, pre {
+    width: 600px;
+    height: 250px;
+    font-size: 1.2rem;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+}
+
+pre {
+    height: auto;
+    margin: 1.5rem auto;
+    text-align: left;
+    border: 2px solid #333;
+    color: aliceblue;
+}
+
+.btn-container {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#jsonToCsvButton,
+#csvToJsonButton {
+    padding: .8rem;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(0, 162, 0);
+    cursor: pointer;
+}
+
+#jsonToCsvButton:hover,
+#csvToJsonButton:hover,
+#copiarJson:hover {
+    background-color: green;
+}
+
+#jsonToCsvButton:active,
+#csvToJsonButton:active,
+#copiarJson:active {
+    transition: .2s;
+    transform: scale(.90);
+}
+
+#copiarJson {
+    padding: .8rem;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(0, 162, 0);
+    cursor: pointer;
+    display: none;
+}
